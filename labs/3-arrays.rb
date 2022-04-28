@@ -15,3 +15,17 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+# alfredo
+alfredo_list = ["milk", "eggs", "bacon", "beer"]
+
+# marilia
+marilia_list = ["beer", "cookies", "apples"]
+
+# combine the two lists together
+shared_list = alfredo_list + marilia_list
+sorted_list = shared_list.sort
+unique_sorted_list = sorted_list.uniq
+puts unique_sorted_list
+
+# puts shared_list.sort.uniq
