@@ -20,3 +20,29 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
+
+# for rank in ranks
+#     for suit in suits
+#         puts "#{rank} of #{suit}"
+#     end
+# end
+
+deck = []
+
+for rank in ranks
+    for suit in suits
+      card = "#{rank} of #{suit}"
+      deck.push(card)
+    end
+  end
+#   puts deck
+
+shuffled_deck = deck.shuffle
+# puts shuffled_deck
+
+hand = shuffled_deck[0,5]
+puts hand
+
+# for card in hand
+#     puts card
+#   end
